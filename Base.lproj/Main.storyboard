@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,20 +15,26 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayingCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="tgD-3O-iTM" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <rect key="frame" x="16" y="147.33333333333331" width="382" height="611.33333333333348"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tgD-3O-iTM" secondAttribute="height" multiplier="5:8" id="1HZ-Yo-w65"/>
+                                    <constraint firstAttribute="width" priority="750" constant="800" id="icA-2A-V4F"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.53333333329999999" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tgD-3O-iTM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GcD-h8-JWV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tgD-3O-iTM" secondAttribute="trailing" constant="16" id="M3s-sa-HVu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tgD-3O-iTM" secondAttribute="bottom" constant="20" id="Qaa-Ge-sqq"/>
-                            <constraint firstItem="tgD-3O-iTM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qPH-Vi-PKF"/>
+                            <constraint firstItem="tgD-3O-iTM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FEf-5c-5T2"/>
+                            <constraint firstItem="tgD-3O-iTM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="GcD-h8-JWV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tgD-3O-iTM" secondAttribute="trailing" constant="16" id="M3s-sa-HVu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tgD-3O-iTM" secondAttribute="bottom" constant="16" id="Qaa-Ge-sqq"/>
+                            <constraint firstItem="tgD-3O-iTM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qPH-Vi-PKF"/>
+                            <constraint firstItem="tgD-3O-iTM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xKf-f4-QFO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
